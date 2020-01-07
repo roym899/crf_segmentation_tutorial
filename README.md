@@ -1,6 +1,6 @@
 # Fast and Accurate Image Segmentation using Fully Connected Conditional Random Fields
 
-The tutorial consists of m files. Only the inference functions as stated in the tutorial have to be implemented. A number of Python packages are required for this tutorial. Make sure all of them are installed and available in your Python environment (you will need Python >3.7, since I use `dataclass`).
+This tutorial was created for a course on probabilistic graphical models at KTH. Start by reading the tutorial in [tutorial.pdf](tutorial.pdf). Only the inference functions as stated in the tutorial have to be implemented. A number of Python packages are required for this tutorial. Make sure all of them are installed and available in your Python environment (you will need Python >3.7, since I use `dataclass`).
 
 Versions/Packages used for development and testing:
 ```
@@ -15,12 +15,12 @@ All functions have documentation (type hints + docstring). Make sure to read and
 
 ## Overview
 ### `main.py`
-Entry point to the program. This uses the crf package, which we develop in this tutorial. This file provides two ways of using the program. 
+Entry point to the program. This uses the crf package, which we develop in this tutorial. Currently there is one way of running the program.
 
 #### Refine Mode
 This takes as input an image and a rough segmentation. The improved segmentation will be either shown or written to disk.
 ```console
-python3 main.py refine image segmentation output
+python3 main.py refine image segmentation -o output
 ```
 
 ### `crf/crf.py`
